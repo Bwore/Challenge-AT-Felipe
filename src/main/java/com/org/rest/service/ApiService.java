@@ -1,10 +1,12 @@
 package com.org.rest.service;
 
 import com.org.rest.dto.PersonDto;
-import com.org.rest.model.PersonId;
+import com.org.rest.model.person.Person;
+import com.org.rest.model.person.PersonId;
 
 public interface ApiService {
-	PersonDto getPersonById(String id);
-	PersonId postPerson(PersonDto personDto);
-	//String deletePerson(String id);
+	Person getPersonById(String id);
+	PersonId postPerson(Person person);
+	Person putPerson(String id, Person person);
+	String deletePersonById(String id);
 }
