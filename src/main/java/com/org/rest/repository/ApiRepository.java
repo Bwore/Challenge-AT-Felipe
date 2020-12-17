@@ -4,10 +4,10 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 import com.org.rest.dto.PersonDto;
-import com.org.rest.model.Person;
+import com.org.rest.model.person.Person;
 
 @Repository
 public interface ApiRepository extends MongoRepository<Person, String>{
-	PersonDto getPersonById(String id);
-	//String deletePerson(String id);
+	Person getPersonById(String id);
+	String deletePersonById(String id);
 }

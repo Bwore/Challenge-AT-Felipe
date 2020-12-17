@@ -1,4 +1,4 @@
-package com.org.rest.model;
+package com.org.rest.model.person;
 
 import lombok.Data;
 
