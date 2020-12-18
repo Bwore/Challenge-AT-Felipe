@@ -7,14 +7,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.http.HttpStatus;
 
-import com.org.rest.dto.PersonDto;
 import com.org.rest.model.person.PersonId;
 import com.org.rest.service.ApiService;
 
-import lombok.extern.slf4j.Slf4j;
-
 @RestController
-@Slf4j
 @RequestMapping("/cv-api/person")
 public class ApiController {
 	@Autowired
@@ -29,7 +25,6 @@ public class ApiController {
     @PostMapping(produces = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public PersonId postPerson(@RequestBody Person person) {
-    	log.info("RequestBody: ", person);
     	return apiService.postPerson(person);
     }
 

@@ -1,6 +1,5 @@
 package com.org.rest.service;
 
-import com.org.rest.dto.PersonDto;
 import com.org.rest.model.person.Person;
 import com.org.rest.model.person.PersonId;
 
