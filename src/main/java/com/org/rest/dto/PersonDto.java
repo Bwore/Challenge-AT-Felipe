@@ -1,15 +1,8 @@
 package com.org.rest.dto;
 
-import com.org.rest.model.person.Skills;
 import org.springframework.data.annotation.Id;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 public class PersonDto {
