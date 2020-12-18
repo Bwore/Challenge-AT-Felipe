@@ -10,9 +10,9 @@ import lombok.Data;
 public class WorkExperience {
 	public String title;
 	public String company;
-	@JsonFormat(pattern="MMM/yyyy")
+	@JsonFormat(pattern="dd/MM/yyyy")
 	public Date from;
-	@JsonFormat(pattern="MMM/yyyy")
+	@JsonFormat(pattern="dd/MM/yyyy")
 	public Date to;
 	public Boolean current;
 	public String description;
