@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class Challenges {
 	public String name;
-    @JsonFormat(pattern="MMM/yyyy")
+    @JsonFormat(pattern="dd/MM/yyyy")
 	public Date date;
 	public String description;
 	public String url;

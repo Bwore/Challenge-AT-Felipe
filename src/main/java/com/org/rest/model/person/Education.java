@@ -10,9 +10,9 @@ import lombok.Data;
 public class Education {
 	public String name;
 	public String career;
-	@JsonFormat(pattern="yyyy")
+	@JsonFormat(pattern="dd/MM/yyyy")
 	public Date from;
-	@JsonFormat(pattern="yyyy")
+	@JsonFormat(pattern="dd/MM/yyyy")
 	public Date to;
 	public String degree; //Enum?
 }
